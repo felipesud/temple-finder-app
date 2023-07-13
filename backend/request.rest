@@ -8,3 +8,7 @@ Content-Type: application/json
   "telephone": "(55) 19-2102-5800",
   "photoUrl": "https://assets.churchofjesuschrist.org/33/cb/33cb73d045a401cfc3d837910eac29ab672ae74c/campinas_brazil_temple_lds.jpeg"
 }
+
+###
+
+GET http://localhost:3000/api/temples
