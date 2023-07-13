@@ -5,7 +5,7 @@ const port = 3000;
 
 
 mongoose
-  .connect('mongodb+srv://<felipesud>:<felipe>@cluster0.lvbamfb.mongodb.net/?retryWrites=true&w=majority', {
+  .connect('mongodb+srv://temple:felipe@cluster0.lvbamfb.mongodb.net/temple-directory?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
