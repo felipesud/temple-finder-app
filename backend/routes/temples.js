@@ -1,6 +1,7 @@
 
-const express = require('express');
-const router = express.Router();
+const router = require('express').Router();
+
+const templeController = require("../controllers/templeController");
 
 // Rota GET para buscar todos os templos
 router.get('/', (req, res) => {
