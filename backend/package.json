@@ -6,12 +6,12 @@
     "mongoose": "^7.3.4"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node app.js"
   },
   "name": "backend",
   "description": "This folder contains the backend code for the Temple Directory application. The backend is built with Node.js, Express.js, and MongoDB, and provides the necessary APIs to handle CRUD operations for managing temple data.",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "app.js",
   "author": "",
   "license": "ISC",
   "devDependencies": {
