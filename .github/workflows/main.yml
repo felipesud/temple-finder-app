@@ -11,12 +11,10 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2.4.2
+        uses: actions/checkout@v2
 
       - name: Merge develop into master
-        run: git merge develop --no-ff --no-edit
+        run: git merge --no-ff develop -m "Merge branch 'develop' into master"
 
       - name: Push changes
-        uses: ad-m/github-push-action@v0.5.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+        run: git push
