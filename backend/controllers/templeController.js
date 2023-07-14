@@ -12,7 +12,7 @@ const templeController = {
             };
 
             const response = await TempleModel.create(temple);
-            res.status(201).json({response, msg: "Temple added Successfully!"})
+            res.status(201).json({response, msg: "Temple added Successfully."})
 
         }catch (error){
             console.log(error);
