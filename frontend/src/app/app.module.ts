@@ -10,6 +10,7 @@ import { TempleFormComponent } from './components/temple-form/temple-form.compon
 import { SearchComponent } from './components/search/search.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { HoverEffectDirective } from './directives/hover-effect.directive';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FooterComponent } from './components/footer/footer.component';
     TempleFormComponent,
     SearchComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    HoverEffectDirective
   ],
   imports: [
     BrowserModule,
