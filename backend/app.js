@@ -16,6 +16,6 @@ const routes = require("./routes/router");
 
 app.use("/api", routes);
 
-app.listen(3000, function (){
+app.listen(port, function (){
     console.log(`Server running on port ${port}`)
 })
