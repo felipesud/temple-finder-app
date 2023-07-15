@@ -30,15 +30,11 @@ export class TempleFormComponent implements OnInit {
     const templeData: Temple = this.templeForm.value;
     this.templeService.createTemple(templeData).subscribe(
       (response) => {
-        this.getTempleList();
+        console.log("Temple created successfully:", response);
       },
       (error) => {
-        // Lógica para lidar com erros
+        console.log("Error creating temple:", error);
       }
     );
-  }
-
-  getTempleList(): void {
-    // Implemente a lógica para obter a lista de templos atualizada após a criação de um novo templo
   }
 }

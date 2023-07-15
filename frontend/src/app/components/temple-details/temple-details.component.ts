@@ -35,14 +35,16 @@ export class TempleDetailsComponent implements OnInit {
 
   updateTempleDetails(id: string, templeData: Temple) {
     this.templeService.updateTemple(id, templeData).subscribe(
-      (response) => {
-        // Lógica para lidar com a resposta após a atualização do templo
+      (updatedTemple) => {
+
+        console.log("Temple updated successfully:", updatedTemple);
       },
       (error) => {
-        console.log(error);
+        console.log("Error updating temple:", error);
       }
     );
   }
+
 
   deleteTemple(id: string) {
     this.templeService.deleteTemple(id).subscribe(
