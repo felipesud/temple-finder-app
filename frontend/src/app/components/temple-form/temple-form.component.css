@@ -1,0 +1,30 @@
+mat-card {
+  background-color: #EBEBEB;
+  color: #2B2B2B;
+  padding: 20px;
+  width: 400px;
+  margin: 0 auto;
+}
+
+mat-card-header {
+  background-color: #23969A;
+  color: #FAFAFA;
+  padding: 16px;
+}
+
+mat-card-content {
+  margin-top: 16px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+mat-form-field {
+  margin-bottom: 16px;
+}
+
+button[type="submit"] {
+  margin-top: 16px;
+}

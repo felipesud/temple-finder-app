@@ -1,0 +1,11 @@
+<div class="temple-details">
+  <img [src]="temple.photoUrl" alt="Temple Photo" class="temple-img">
+  <h2 class="temple-name">{{ temple.name }}</h2>
+  <p class="temple-address">{{ temple.address }}</p>
+  <p class="temple-phone">{{ temple.telephone }}</p>
+
+  <div class="button-container">
+    <button class="update-button" (click)="updateTempleDetails(temple.id, temple)">Atualizar</button>
+    <button class="delete-button" (click)="deleteTemple(temple.id)">Excluir</button>
+  </div>
+</div>
