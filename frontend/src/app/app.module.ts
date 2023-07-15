@@ -13,6 +13,15 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HoverEffectDirective } from './directives/hover-effect.directive';
 import { TempleService } from './services/temple.service';
 
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { FormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { ReactiveFormsModule } from '@angular/forms';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +37,14 @@ import { TempleService } from './services/temple.service';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatButtonModule,
+    MatCardModule,
+    MatDialogModule,
+    MatToolbarModule,
+    FormsModule,
+    MatInputModule,
+    ReactiveFormsModule
   ],
   providers: [TempleService],
   bootstrap: [AppComponent]

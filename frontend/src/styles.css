@@ -1,4 +1,76 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+* {
+  font-family: 'Oxygen', sans-serif;
+}
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+    font-weight:400;
+    font-size: 14px;
+    line-height: 21px;
+    background-color: var(--gray-98);
+    overflow: hidden;
+}
+
+h1 {
+    font-weight: lighter;
+    font-size: 64px;
+    line-height: 96px;
+}
+
+h2{
+    font-size: 32px;
+    line-height: 48px;
+}
+
+h3{
+    font-size: 24px;
+    line-height: 36px;
+}
+
+h4{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+i {
+  padding-right: 5px;
+  vertical-align: middle;
+}
+:root {
+  --gray-05: #0C0C0C;
+  --gray-14: #242424;
+  --gray-31: #4E4E4E;
+  --gray-42: #6A6A6A;
+  --gray-53: #878787;
+  --gray-86: #DCDCDC;
+  --gray-92: #EBEBEB;
+  --gray-98: #FAFAFA;
+  --green-40: #329864;
+  --blue-30: #005499;
+  --blue-38: #0069C2;
+  --blue-48: #1174E6;
+  --blue-62: #4D97ED;
+  --red-37: #BB0B02;
+  --red-42: #D40D02;
+  --red-46: #ED0E00;
+  --yellow-33: #A08209;
+  --orange-46: #D46617;
+  --scarlet-43: #BD1F44;
+  --tangerine-45: #CF4219;
+
+  /* Sequential */
+  --gray-17: #2B2B2B;
+  --gray-50: #808080;
+  --pink-64: #E75FA0;
+  --pink-31: #88144C;
+  --turquoise-37: #23969A;
+  --turquoise-7: #071D1D;
+  --ocher-44: #B98327;
+  --ocher-11: #2D2009;
+  --slate-52: #6488A4;
+  --slate-19: #24323E;
+  --steel-59: #8087AD;
+  --steel-25: #33384F;
+}

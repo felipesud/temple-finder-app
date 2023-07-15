@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { TempleService } from 'src/app/services/temple.service';
+import { Temple } from 'src/app/models/temple.model';
 
 @Component({
   selector: 'app-temple-list',
@@ -7,41 +9,54 @@ import { TempleService } from 'src/app/services/temple.service';
   styleUrls: ['./temple-list.component.css']
 })
 export class TempleListComponent implements OnInit {
-  constructor(private templeService: TempleService) {}
+  temples: Temple[] = [];
+
+  constructor(private templeService: TempleService, private router: Router) {}
 
   ngOnInit(): void {
-    // Initialize component logic
+    this.getTempleList();
   }
 
-  createNewTemple(templeData: any) {
-    this.templeService.createTemple(templeData).subscribe(
-      (response) => {
-        // Logic to handle response after creating the temple
+  getTempleList() {
+    this.templeService.getTemples().subscribe(
+      (temples: Temple[]) => {
+        this.temples = temples;
       },
       (error) => {
-        // Logic to handle errors
+        console.log(error);
+      }
+    );
+  }
+
+  createNewTemple(templeData: Temple) {
+    this.templeService.createTemple(templeData).subscribe(
+      (response) => {
+        this.getTempleList();
+      },
+      (error) => {
+        console.log(error);
       }
     );
   }
 
   getTempleDetails(id: string) {
     this.templeService.getTemple(id).subscribe(
-      (temple) => {
-        // Logic to handle temple details
+      (temple: Temple) => {
+        // Lógica para lidar com os detalhes do templo
       },
       (error) => {
-        // Logic to handle errors
+        console.log(error);
       }
     );
   }
 
-  updateTempleDetails(id: string, templeData: any) {
+  updateTempleDetails(id: string, templeData: Temple) {
     this.templeService.updateTemple(id, templeData).subscribe(
       (response) => {
-        // Logic to handle response after updating the temple
+        // Lógica para lidar com a resposta após a atualização do templo
       },
       (error) => {
-        // Logic to handle errors
+        console.log(error);
       }
     );
   }
@@ -49,11 +64,15 @@ export class TempleListComponent implements OnInit {
   deleteTemple(id: string) {
     this.templeService.deleteTemple(id).subscribe(
       (response) => {
-        // Logic to handle response after deleting the temple
+        this.getTempleList();
       },
       (error) => {
-        // Logic to handle errors
+        console.log(error);
       }
     );
+  }
+
+  openTempleDetails(id: string) {
+    this.router.navigate(['/temples', id]);
   }
 }
