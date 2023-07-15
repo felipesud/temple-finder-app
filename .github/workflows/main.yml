@@ -1,0 +1,20 @@
+name: Merge develop to master
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Merge develop into master
+        run: git merge --no-ff develop -m "Merge branch 'develop' into master"
+
+      - name: Push changes
+        run: git push
