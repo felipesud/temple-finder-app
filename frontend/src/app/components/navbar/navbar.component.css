@@ -1,0 +1,17 @@
+.navbar {
+  background-color: #23969A;
+  color: #FAFAFA;
+}
+
+mat-toolbar {
+  background-color: #23969A;
+  color: #FAFAFA;
+}
+.mat-toolbar a {
+  color: #FAFAFA;
+}
+
+.mat-toolbar a:hover {
+  background-color: #FAFAFA;
+  color: #23969A;
+}
