@@ -1,0 +1,47 @@
+.temple-details {
+  background-color: #EBEBEB;
+  color: #2B2B2B;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.temple-details .temple-img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.temple-details .temple-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.temple-details .temple-address,
+.temple-details .temple-phone {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.button-container button {
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button-container .update-button {
+  background-color: #FFC107;
+  color: #2B2B2B;
+  margin-right: 10px;
+}
+
+.button-container .delete-button {
+  background-color: #F44336;
+  color: #FFFFFF;
+}
