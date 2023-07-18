@@ -20,20 +20,13 @@ export class TempleListComponent implements OnInit {
   getTempleList() {
     this.templeService.getTemples().subscribe(
       (temples: Temple[]) => {
-
-        if (temples && temples.length > 0) {
-          this.temples = temples;
-        } else {
-          console.warn('No temples found.');
-        }
+        this.temples = temples;
       },
       (error: any) => {
         console.error('Error fetching temples:', error);
       }
     );
   }
-
-
 
   createNewTemple(templeData: Temple) {
     this.templeService.createTemple(templeData).subscribe(
@@ -70,7 +63,7 @@ export class TempleListComponent implements OnInit {
 
   deleteTemple(id: string) {
     this.templeService.deleteTemple(id).subscribe(
-      (response) => {
+      () => {
         this.getTempleList();
       },
       (error) => {

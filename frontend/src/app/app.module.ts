@@ -20,7 +20,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { ReactiveFormsModule } from '@angular/forms';
-
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -32,6 +32,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     NavbarComponent,
     FooterComponent,
     HoverEffectDirective
+
   ],
   imports: [
     BrowserModule,
@@ -45,7 +46,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     FormsModule,
     MatInputModule,
     ReactiveFormsModule,
-
+    MatIconModule,
     RouterModule,
   ],
   providers: [TempleService],

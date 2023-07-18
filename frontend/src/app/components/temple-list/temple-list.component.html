@@ -1,5 +1,8 @@
 <div class="temple-list">
   <mat-card class="card temple-card" *ngFor="let temple of temples">
+    <button mat-icon-button color="warn" class="delete-button" (click)="deleteTemple(temple.id)">
+      <mat-icon>delete</mat-icon>
+    </button>
     <img [src]="temple.photoUrl" alt="Temple Photo" class="card-img card-img-top">
     <mat-card-content>
       <h3 class="card-title">{{ temple.name }}</h3>
