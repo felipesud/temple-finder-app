@@ -27,11 +27,9 @@ import { MatIconModule } from '@angular/material/icon';
     TempleListComponent,
     TempleDetailsComponent,
     TempleFormComponent,
-
     NavbarComponent,
     FooterComponent,
-    HoverEffectDirective
-
+    HoverEffectDirective,
   ],
   imports: [
     BrowserModule,
@@ -49,6 +47,6 @@ import { MatIconModule } from '@angular/material/icon';
     RouterModule,
   ],
   providers: [TempleService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

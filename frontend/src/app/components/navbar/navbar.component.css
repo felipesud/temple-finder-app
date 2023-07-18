@@ -1,17 +1,17 @@
 .navbar {
-  background-color: #23969A;
-  color: #FAFAFA;
+  background-color: #23969a;
+  color: #fafafa;
 }
 
 mat-toolbar {
-  background-color: #23969A;
-  color: #FAFAFA;
+  background-color: #23969a;
+  color: #fafafa;
 }
 .mat-toolbar a {
-  color: #FAFAFA;
+  color: #fafafa;
 }
 
 .mat-toolbar a:hover {
-  background-color: #FAFAFA;
-  color: #23969A;
+  background-color: #fafafa;
+  color: #23969a;
 }

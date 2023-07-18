@@ -1,38 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
 * {
-  font-family: 'Oxygen', sans-serif;
+  font-family: "Oxygen", sans-serif;
 }
-html, body { height: 100%; }
+html,
 body {
-  font-weight:400;
+  height: 100%;
+}
+body {
+  font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   background-color: var(--gray-98);
 }
 
-
 h1 {
-    font-weight: lighter;
-    font-size: 64px;
-    line-height: 96px;
+  font-weight: lighter;
+  font-size: 64px;
+  line-height: 96px;
 }
 
-h2{
-    font-size: 32px;
-    line-height: 48px;
+h2 {
+  font-size: 32px;
+  line-height: 48px;
 }
 
-h3{
-    font-size: 24px;
-    line-height: 36px;
+h3 {
+  font-size: 24px;
+  line-height: 36px;
 }
 
-h4{
-    font-size: 16px;
-    line-height: 24px;
+h4 {
+  font-size: 16px;
+  line-height: 24px;
 }
 
 i {
@@ -40,40 +42,38 @@ i {
   vertical-align: middle;
 }
 :root {
-  --gray-05: #0C0C0C;
+  --gray-05: #0c0c0c;
   --gray-14: #242424;
-  --gray-31: #4E4E4E;
-  --gray-42: #6A6A6A;
+  --gray-31: #4e4e4e;
+  --gray-42: #6a6a6a;
   --gray-53: #878787;
-  --gray-86: #DCDCDC;
-  --gray-92: #EBEBEB;
-  --gray-98: #FAFAFA;
+  --gray-86: #dcdcdc;
+  --gray-92: #ebebeb;
+  --gray-98: #fafafa;
   --green-40: #329864;
   --blue-30: #005499;
-  --blue-38: #0069C2;
-  --blue-48: #1174E6;
-  --blue-62: #4D97ED;
-  --red-37: #BB0B02;
-  --red-42: #D40D02;
-  --red-46: #ED0E00;
-  --yellow-33: #A08209;
-  --orange-46: #D46617;
-  --scarlet-43: #BD1F44;
-  --tangerine-45: #CF4219;
+  --blue-38: #0069c2;
+  --blue-48: #1174e6;
+  --blue-62: #4d97ed;
+  --red-37: #bb0b02;
+  --red-42: #d40d02;
+  --red-46: #ed0e00;
+  --yellow-33: #a08209;
+  --orange-46: #d46617;
+  --scarlet-43: #bd1f44;
+  --tangerine-45: #cf4219;
 
   /* Sequential */
-  --gray-17: #2B2B2B;
+  --gray-17: #2b2b2b;
   --gray-50: #808080;
-  --pink-64: #E75FA0;
-  --pink-31: #88144C;
-  --turquoise-37: #23969A;
-  --turquoise-7: #071D1D;
-  --ocher-44: #B98327;
-  --ocher-11: #2D2009;
-  --slate-52: #6488A4;
-  --slate-19: #24323E;
-  --steel-59: #8087AD;
-  --steel-25: #33384F;
+  --pink-64: #e75fa0;
+  --pink-31: #88144c;
+  --turquoise-37: #23969a;
+  --turquoise-7: #071d1d;
+  --ocher-44: #b98327;
+  --ocher-11: #2d2009;
+  --slate-52: #6488a4;
+  --slate-19: #24323e;
+  --steel-59: #8087ad;
+  --steel-25: #33384f;
 }
-
-

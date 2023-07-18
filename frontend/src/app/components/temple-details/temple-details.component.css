@@ -1,6 +1,6 @@
 .temple-details {
-  background-color: #EBEBEB;
-  color: #2B2B2B;
+  background-color: #ebebeb;
+  color: #2b2b2b;
   padding: 20px;
   border-radius: 8px;
 }
@@ -36,12 +36,12 @@
 }
 
 .button-container .update-button {
-  background-color: #FFC107;
-  color: #2B2B2B;
+  background-color: #ffc107;
+  color: #2b2b2b;
   margin-right: 10px;
 }
 
 .button-container .delete-button {
-  background-color: #F44336;
-  color: #FFFFFF;
+  background-color: #f44336;
+  color: #ffffff;
 }
