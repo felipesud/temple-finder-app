@@ -20,13 +20,20 @@ export class TempleListComponent implements OnInit {
   getTempleList() {
     this.templeService.getTemples().subscribe(
       (temples: Temple[]) => {
-        this.temples = temples;
+
+        if (temples && temples.length > 0) {
+          this.temples = temples;
+        } else {
+          console.warn('No temples found.');
+        }
       },
-      (error) => {
-        console.log(error);
+      (error: any) => {
+        console.error('Error fetching temples:', error);
       }
     );
   }
+
+
 
   createNewTemple(templeData: Temple) {
     this.templeService.createTemple(templeData).subscribe(
@@ -42,7 +49,7 @@ export class TempleListComponent implements OnInit {
   getTempleDetails(id: string) {
     this.templeService.getTemple(id).subscribe(
       (temple: Temple) => {
-        // Lógica para lidar com os detalhes do templo
+
       },
       (error) => {
         console.log(error);
@@ -53,7 +60,7 @@ export class TempleListComponent implements OnInit {
   updateTempleDetails(id: string, templeData: Temple) {
     this.templeService.updateTemple(id, templeData).subscribe(
       (response) => {
-        // Lógica para lidar com a resposta após a atualização do templo
+
       },
       (error) => {
         console.log(error);

@@ -1,5 +1,5 @@
 const { Temple: TempleModel } = require("../models/Temple");
-
+console.log(`Temple Model => ${TempleModel}`)
 const templeController = {
     create: async (req, res) => {
         try {
@@ -23,7 +23,7 @@ const templeController = {
     },
     getAll: async (req, res) => {
         try {
-            const temples = await TempleModel?.find();
+            const temples = await TempleModel.find();
             console.log("Retrieved temples:", temples);
 
             res.json(temples);
@@ -38,7 +38,7 @@ const templeController = {
             const id = req.params.id;
             console.log("Requested temple id:", id);
 
-            const temple = await TempleModel?.findById(id);
+            const temple = await TempleModel.findById(id);
             console.log("Retrieved temple:", temple);
 
             if (!temple) {
@@ -56,14 +56,14 @@ const templeController = {
             const id = req.params.id;
             console.log("Requested temple id:", id);
 
-            const temple = await TempleModel?.findById(id);
+            const temple = await TempleModel.findById(id);
             console.log("Retrieved temple:", temple);
 
             if (!temple) {
                 res.status(404).json({ msg: "Temple not found." });
             }
 
-            const deletedTemple = await TempleModel?.findByIdAndDelete(id);
+            const deletedTemple = await TempleModel.findByIdAndDelete(id);
             console.log("Deleted temple:", deletedTemple);
 
             res.status(200).json({ deletedTemple, msg: "Temple deleted successfully." });

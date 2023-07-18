@@ -23,4 +23,4 @@ const templeSchema = new Schema({
 
 const Temple = mongoose.model('Temple', templeSchema);
 
-module.exports = Temple;
+module.exports = {Temple};

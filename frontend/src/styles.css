@@ -6,12 +6,12 @@
 }
 html, body { height: 100%; }
 body {
-    font-weight:400;
-    font-size: 14px;
-    line-height: 21px;
-    background-color: var(--gray-98);
-    overflow: hidden;
+  font-weight:400;
+  font-size: 14px;
+  line-height: 21px;
+  background-color: var(--gray-98);
 }
+
 
 h1 {
     font-weight: lighter;
@@ -74,3 +74,5 @@ i {
   --steel-59: #8087AD;
   --steel-25: #33384F;
 }
+
+

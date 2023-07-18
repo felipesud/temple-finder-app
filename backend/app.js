@@ -13,6 +13,9 @@ app.use(
         fontSrc: ["'self'", "https://fonts.gstatic.com"],
         connectSrc: ["'self'", "http://localhost:3000"],
         scriptSrc: ["'self'", "https://apis.google.com"],
+        imgSrc: ["'self'", "https://www.gstatic.com", "https://assets.churchofjesuschrist.org", "https://assets.ldscdn.org"], 
+        mediaSrc: ["'self'", "https://www.gstatic.com"],
+        frameSrc: ["'self'", "https://www.gstatic.com"],
       },
     })
   );

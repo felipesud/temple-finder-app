@@ -1,9 +1,8 @@
 <div class="temple-list">
-  <mat-card class="card" *ngFor="let temple of temples">
-    <img [src]="temple.photoUrl" alt="Temple Photo" class="card-img-top">
+  <mat-card class="card temple-card" *ngFor="let temple of temples">
+    <img [src]="temple.photoUrl" alt="Temple Photo" class="card-img card-img-top">
     <mat-card-content>
       <h3 class="card-title">{{ temple.name }}</h3>
-      <p class="card-text">{{ temple.address }}</p>
     </mat-card-content>
     <mat-card-actions>
       <button mat-button color="primary" (click)="openTempleDetails(temple.id)">Details</button>
