@@ -6,6 +6,7 @@ import { Temple } from '../models/temple.model';
 })
 export class TempleAdapter {
   adapt(response: any): Temple {
+    console.log('Resposta do servidor:', response);
     return {
       id: response._id,
       name: response.name,

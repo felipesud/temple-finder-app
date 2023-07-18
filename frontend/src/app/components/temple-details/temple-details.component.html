@@ -1,11 +1,20 @@
 <div class="temple-details">
-  <img [src]="temple.photoUrl" alt="Temple Photo" class="temple-img">
-  <h2 class="temple-name">{{ temple.name }}</h2>
-  <p class="temple-address">{{ temple.address }}</p>
-  <p class="temple-phone">{{ temple.telephone }}</p>
+  <form (submit)="updateTempleDetails()">
+    <img [src]="temple.photoUrl" alt="Temple Photo" class="temple-img">
+    <h2 class="temple-name">{{ temple.name }}</h2>
+    <input type="text" [(ngModel)]="temple.name" name="name" placeholder="Temple Name" class="temple-input">
+    <p class="temple-address">{{ temple.address }}</p>
+    <input type="text" [(ngModel)]="temple.address" name="address" placeholder="Temple Address" class="temple-input">
+    <p class="temple-phone">{{ temple.telephone }}</p>
+    <input type="text" [(ngModel)]="temple.telephone" name="telephone" placeholder="Telephone" class="temple-input">
 
-  <div class="button-container">
-    <button class="update-button" (click)="updateTempleDetails(temple.id, temple)">Atualizar</button>
-    <button class="delete-button" (click)="deleteTemple(temple.id)">Excluir</button>
+    <div class="button-container">
+      <button type="submit" class="update-button">Update</button>
+      <!-- <button class="delete-button" (click)="deleteTemple(temple.id)">Delete</button> -->
+    </div>
+  </form>
+  <div *ngIf="message" class="message">
+    {{ message }}
   </div>
 </div>
+
