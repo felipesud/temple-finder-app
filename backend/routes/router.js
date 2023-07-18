@@ -1,8 +1,7 @@
 const router = require("express").Router();
 
-//Temples Router
-const templesRouter = require("./temples")
+const templesRouter = require("./temples");
 
-router.use("/", templesRouter)
+router.use("/", templesRouter);
 
 module.exports = router;
