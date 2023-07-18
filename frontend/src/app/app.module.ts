@@ -8,7 +8,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TempleListComponent } from './components/temple-list/temple-list.component';
 import { TempleDetailsComponent } from './components/temple-details/temple-details.component';
 import { TempleFormComponent } from './components/temple-form/temple-form.component';
-import { SearchComponent } from './components/search/search.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HoverEffectDirective } from './directives/hover-effect.directive';
@@ -28,7 +27,7 @@ import { MatIconModule } from '@angular/material/icon';
     TempleListComponent,
     TempleDetailsComponent,
     TempleFormComponent,
-    SearchComponent,
+
     NavbarComponent,
     FooterComponent,
     HoverEffectDirective
