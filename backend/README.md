@@ -8,6 +8,23 @@ This folder contains the backend code for the Temple Directory application. The 
 - Express.js
 - MongoDB
 
+## Backend Structure
+
+```
+- backend/
+    - app.js
+    - controllers/
+        -TempleController.js
+    - db/
+        - conn.js
+    - models/
+        - temple.js
+    - routes/
+        - router.js
+        - temples.js
+
+```
+
 ## API Endpoints
 
 The backend provides the following API endpoints for interacting with the temple data:

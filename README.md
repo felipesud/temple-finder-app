@@ -16,26 +16,61 @@ This repository contains the final project submission for the WDD 430 - Web Full
 
 ```
 - backend/
-    - server.js
+    - app.js
+    - controllers/
+        -TempleController.js
+    - db/
+        - conn.js
+    - models/
+        - temple.js
     - routes/
         - router.js
         - temples.js
-    - models/
-        - temple.js
 - frontend/
     - src/
         - app/
+            - adapters/
+                - temple.adapter.ts
             - components/
-                - temple-list/
-                    - temple-list.component.html
-                    - temple-list.component.css
-                    - temple-list.component.ts
+                - footer/
+                    - footer.component.css
+                    - footer.component.html
+                    - footer.component.spec.ts
+                    - footer.component.ts
+                - navbar/
+                    - navbar.component.css
+                    - navbar.component.html
+                    - navbar.component.spec.ts
+                    - navbar.component.ts
                 - temple-details/
-                    - temple-details.component.html
                     - temple-details.component.css
+                    - temple-details.component.html
+                    - temple-details.component.spec.ts
                     - temple-details.component.ts
+                - temple-form/
+                    - temple-form.component.css
+                    - temple-form.component.html
+                    - temple-form.component.spec.ts
+                    - temple-form.component.ts
+                - temple-list/
+                    - temple-list.component.css
+                    - temple-list.component.html
+                    - temple-list.component.spec.ts
+                    - temple-list.component.ts
+            - models/
+                - temple.model.ts
             - services/
+                - temple.service.spec.ts
                 - temple.service.ts
+            - app-routing.modules.ts
+            - app.component.css
+            - app.component.html
+            - app.component.spec.ts
+            - app.component.ts
+            - app.module.ts
+        - assets/
+        - environments/
+            - environments.ts
 - README.md
 
 ```
