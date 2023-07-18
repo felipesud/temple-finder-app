@@ -7,18 +7,23 @@ import { TempleService } from 'src/app/services/temple.service';
 @Component({
   selector: 'app-temple-details',
   templateUrl: './temple-details.component.html',
-  styleUrls: ['./temple-details.component.css']
+  styleUrls: ['./temple-details.component.css'],
 })
 export class TempleDetailsComponent implements OnInit {
-  temple:Temple = {
+  temple: Temple = {
     id: '',
     name: '',
     address: '',
     telephone: '',
-    photoUrl: ''
+    photoUrl: '',
   };
 
-  constructor(private route: ActivatedRoute, private templeService: TempleService) {}
+  message: string = '';
+
+  constructor(
+    private route: ActivatedRoute,
+    private templeService: TempleService
+  ) {}
 
   ngOnInit(): void {
     const templeId = this.route.snapshot.params['id'];
@@ -33,23 +38,38 @@ export class TempleDetailsComponent implements OnInit {
     );
   }
 
-  updateTempleDetails(id: string, templeData: Temple) {
-    this.templeService.updateTemple(id, templeData).subscribe(
+  updateTempleDetails() {
+    this.templeService.updateTemple(this.temple.id, this.temple).subscribe(
       (updatedTemple) => {
-
-        console.log("Temple updated successfully:", updatedTemple);
+        this.message = 'Temple updated successfully';
+        console.log('Temple updated successfully:', updatedTemple);
       },
       (error) => {
-        console.log("Error updating temple:", error);
+        this.message = 'Error updating temple';
+        console.log('Error updating temple:', error);
       }
     );
   }
 
-
   deleteTemple(id: string) {
     this.templeService.deleteTemple(id).subscribe(
-      (response) => {
-        this.getTempleList();
+      (deleted) => {
+        if (deleted) {
+          this.message = 'Temple deleted successfully';
+          console.log('Temple deleted successfully');
+          this.temple =  {
+            id: '',
+            name: '',
+            address: '',
+            telephone: '',
+            photoUrl: '',
+          };
+
+        } else {
+          console.log('Error deleting temple');
+          this.updateTempleDetails();
+
+        }
       },
       (error) => {
         console.log(error);
@@ -57,7 +77,4 @@ export class TempleDetailsComponent implements OnInit {
     );
   }
 
-  getTempleList() {
-    // Lógica para obter a lista de templos atualizada
-  }
 }

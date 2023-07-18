@@ -10,7 +10,7 @@ import { Temple } from 'src/app/models/temple.model';
 })
 export class TempleFormComponent implements OnInit {
   templeForm!: FormGroup;
-
+  message: string = '';
   constructor(private formBuilder: FormBuilder, private templeService: TempleService) {}
 
   ngOnInit(): void {
@@ -30,9 +30,11 @@ export class TempleFormComponent implements OnInit {
     const templeData: Temple = this.templeForm.value;
     this.templeService.createTemple(templeData).subscribe(
       (response) => {
+        this.message = "Temple created successfully";
         console.log("Temple created successfully:", response);
       },
       (error) => {
+        this.message = "Error creating temple";
         console.log("Error creating temple:", error);
       }
     );

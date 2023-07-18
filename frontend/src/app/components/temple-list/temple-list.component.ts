@@ -22,8 +22,8 @@ export class TempleListComponent implements OnInit {
       (temples: Temple[]) => {
         this.temples = temples;
       },
-      (error) => {
-        console.log(error);
+      (error: any) => {
+        console.error('Error fetching temples:', error);
       }
     );
   }
@@ -42,7 +42,7 @@ export class TempleListComponent implements OnInit {
   getTempleDetails(id: string) {
     this.templeService.getTemple(id).subscribe(
       (temple: Temple) => {
-        // Lógica para lidar com os detalhes do templo
+
       },
       (error) => {
         console.log(error);
@@ -53,7 +53,7 @@ export class TempleListComponent implements OnInit {
   updateTempleDetails(id: string, templeData: Temple) {
     this.templeService.updateTemple(id, templeData).subscribe(
       (response) => {
-        // Lógica para lidar com a resposta após a atualização do templo
+
       },
       (error) => {
         console.log(error);
@@ -63,7 +63,7 @@ export class TempleListComponent implements OnInit {
 
   deleteTemple(id: string) {
     this.templeService.deleteTemple(id).subscribe(
-      (response) => {
+      () => {
         this.getTempleList();
       },
       (error) => {
