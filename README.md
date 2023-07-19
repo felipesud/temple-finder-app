@@ -1,6 +1,6 @@
 # WDD 430 - Web Full-Stack Development Final Project
 
-[![Project Demo Video](https://img.youtube.com/vi/jv5n81jy8Aw/hqdefault.jpg)](https://youtu.be/jv5n81jy8Aw)
+[![Project Demo Video](https://img.youtube.com/vi/jv5n81jy8Aw/maxresdefault.jpg)](https://youtu.be/jv5n81jy8Aw)
 
 This repository contains the final project submission for the WDD 430 - Web Full-Stack Development course at BYU-Idaho. The project is a web application built using the MEAN stack (MongoDB, Express, Angular, and Node.js). It showcases the implementation of a temple directory application that allows users to view information about various temples of The Church of Jesus Christ of Latter-day Saints.
 
