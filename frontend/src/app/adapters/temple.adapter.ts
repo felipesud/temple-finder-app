@@ -2,17 +2,16 @@ import { Injectable } from '@angular/core';
 import { Temple } from '../models/temple.model';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class TempleAdapter {
   adapt(response: any): Temple {
-    console.log('Resposta do servidor:', response);
     return {
       id: response._id,
       name: response.name,
       address: response.address,
       telephone: response.telephone,
-      photoUrl: response.photoUrl
+      photoUrl: response.photoUrl,
     };
   }
 }

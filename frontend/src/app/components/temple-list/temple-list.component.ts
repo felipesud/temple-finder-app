@@ -6,7 +6,7 @@ import { Temple } from 'src/app/models/temple.model';
 @Component({
   selector: 'app-temple-list',
   templateUrl: './temple-list.component.html',
-  styleUrls: ['./temple-list.component.css']
+  styleUrls: ['./temple-list.component.css'],
 })
 export class TempleListComponent implements OnInit {
   temples: Temple[] = [];
@@ -41,9 +41,7 @@ export class TempleListComponent implements OnInit {
 
   getTempleDetails(id: string) {
     this.templeService.getTemple(id).subscribe(
-      (temple: Temple) => {
-
-      },
+      (temple: Temple) => {},
       (error) => {
         console.log(error);
       }
@@ -52,9 +50,7 @@ export class TempleListComponent implements OnInit {
 
   updateTempleDetails(id: string, templeData: Temple) {
     this.templeService.updateTemple(id, templeData).subscribe(
-      (response) => {
-
-      },
+      (response) => {},
       (error) => {
         console.log(error);
       }

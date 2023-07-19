@@ -1,10 +1,8 @@
 import { Directive } from '@angular/core';
 
 @Directive({
-  selector: '[appHoverEffect]'
+  selector: '[appHoverEffect]',
 })
 export class HoverEffectDirective {
-
-  constructor() { }
-
+  constructor() {}
 }

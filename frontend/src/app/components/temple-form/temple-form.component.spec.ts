@@ -8,7 +8,7 @@ describe('TempleFormComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [TempleFormComponent]
+      declarations: [TempleFormComponent],
     });
     fixture = TestBed.createComponent(TempleFormComponent);
     component = fixture.componentInstance;
