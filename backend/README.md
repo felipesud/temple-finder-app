@@ -39,12 +39,6 @@ The backend provides the following API endpoints for interacting with the temple
 
 The temple data is stored in a MongoDB database. The connection to the database is established using Mongoose, an Object Data Modeling (ODM) library for MongoDB and Node.js.
 
-## Deployment
-
-The backend API is deployed on Render, a modern cloud platform. You can access the API at the following URL:
-
-- API Base URL: [https://your-backend-api.render.com](https://your-backend-api.render.com)
-
 ## Getting Started
 
 To run the backend server locally, follow these steps:
