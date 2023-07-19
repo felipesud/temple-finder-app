@@ -1,12 +1,30 @@
 <div class="temple-details">
   <form (submit)="updateTempleDetails()">
-    <img [src]="temple.photoUrl" alt="Temple Photo" class="temple-img">
+    <img [src]="temple.photoUrl" alt="Temple Photo" class="temple-img" />
     <h2 class="temple-name">{{ temple.name }}</h2>
-    <input type="text" [(ngModel)]="temple.name" name="name" placeholder="Temple Name" class="temple-input">
+    <input
+      type="text"
+      [(ngModel)]="temple.name"
+      name="name"
+      placeholder="Temple Name"
+      class="temple-input"
+    />
     <p class="temple-address">{{ temple.address }}</p>
-    <input type="text" [(ngModel)]="temple.address" name="address" placeholder="Temple Address" class="temple-input">
+    <input
+      type="text"
+      [(ngModel)]="temple.address"
+      name="address"
+      placeholder="Temple Address"
+      class="temple-input"
+    />
     <p class="temple-phone">{{ temple.telephone }}</p>
-    <input type="text" [(ngModel)]="temple.telephone" name="telephone" placeholder="Telephone" class="temple-input">
+    <input
+      type="text"
+      [(ngModel)]="temple.telephone"
+      name="telephone"
+      placeholder="Telephone"
+      class="temple-input"
+    />
 
     <div class="button-container">
       <button type="submit" class="update-button">Update</button>
@@ -17,4 +35,3 @@
     {{ message }}
   </div>
 </div>
-

@@ -2,13 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #23969A;
-  color: #FAFAFA;
+  background-color: #23969a;
+  color: #fafafa;
   padding: 16px;
 }
 
 .footer .link {
-  color: #FAFAFA;
+  color: #fafafa;
   text-decoration: none;
   transition: color 0.3s ease;
 }

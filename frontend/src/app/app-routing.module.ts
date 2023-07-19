@@ -8,11 +8,10 @@ const routes: Routes = [
   { path: 'temples', component: TempleListComponent },
   { path: 'temples/:id', component: TempleDetailsComponent },
   { path: 'temple-form', component: TempleFormComponent },
-
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

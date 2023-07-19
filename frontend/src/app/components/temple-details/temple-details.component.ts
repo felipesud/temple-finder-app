@@ -57,18 +57,16 @@ export class TempleDetailsComponent implements OnInit {
         if (deleted) {
           this.message = 'Temple deleted successfully';
           console.log('Temple deleted successfully');
-          this.temple =  {
+          this.temple = {
             id: '',
             name: '',
             address: '',
             telephone: '',
             photoUrl: '',
           };
-
         } else {
           console.log('Error deleting temple');
           this.updateTempleDetails();
-
         }
       },
       (error) => {
@@ -76,5 +74,4 @@ export class TempleDetailsComponent implements OnInit {
       }
     );
   }
-
 }

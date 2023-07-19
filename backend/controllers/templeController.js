@@ -1,5 +1,4 @@
 const { Temple: TempleModel } = require("../models/Temple");
-console.log(`Temple Model => ${TempleModel}`)
 const templeController = {
     create: async (req, res) => {
         try {
@@ -10,7 +9,7 @@ const templeController = {
                 photoUrl: req.body.photoUrl,
             };
 
-            console.log("Temple object:", temple);
+           
 
             const response = await TempleModel.create(temple);
             console.log("Created temple:", response);
